@@ -1,0 +1,135 @@
+08:37:06.663 | V |         | HandleShellCompletion.OnBuildCreated (200)
+08:37:06.776 | V |         | ArgumentsFromParametersFile.OnBuildCreated (150)
+08:37:06.784 | V |         | Passing Solution for member Solution : Solution ...
+08:37:06.793 | V |         | InjectParameterValues.OnBuildCreated (100)
+08:37:06.823 | V |         | GenerateBuildServerConfigurations.OnBuildCreated (50)
+08:37:06.823 | V |         | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
+08:37:06.835 | V |         | UpdateNotification.OnBuildCreated (10)
+08:37:06.835 | V |         | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
+08:37:06.835 | V |         | HandleVisualStudioDebugging.OnBuildCreated (0)
+08:37:06.836 | V |         | EventInvoker.OnBuildCreated (-3.4028235E+38)
+08:37:06.855 | V |         | HandleHelpRequests.OnBuildInitialized (5)
+08:37:06.856 | V |         | CheckBuildProjectConfigurations.OnBuildInitialized (0)
+08:37:07.023 | V |         | Telemetry.OnBuildInitialized (0)
+08:37:07.361 | V |         | Sending BuildStarted telemetry event ...
+08:37:07.364 | V |         |   build_components         = 
+08:37:07.364 | V |         |   build_type               = Project
+08:37:07.364 | V |         |   compile_time             = <null>
+08:37:07.364 | V |         |   config_generators        = 
+08:37:07.364 | V |         |   host                     = Terminal
+08:37:07.364 | V |         |   num_custom_components    = 0
+08:37:07.364 | V |         |   num_custom_extensions    = 0
+08:37:07.364 | V |         |   num_partitioned_targets  = 0
+08:37:07.364 | V |         |   num_secrets              = 0
+08:37:07.364 | V |         |   num_targets              = 5
+08:37:07.364 | V |         |   os_architecture          = X64
+08:37:07.364 | V |         |   os_platform              = Windows
+08:37:07.364 | V |         |   target_framework         = .NETCoreApp,Version=v6.0
+08:37:07.364 | V |         |   version_dotnet_sdk       = 6.0.201
+08:37:07.364 | V |         |   version_nuke_common      = 6.0.1
+08:37:07.364 | V |         |   version_nuke_global_tool = <null>
+08:37:07.667 | V |         | InjectNonParameterValues.OnBuildInitialized (-100)
+08:37:07.668 | W |         | Exception has been thrown by the target of an invocation.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.ArgumentException: url != null (Parameter 'url')
+   at Nuke.Common.Assert.NotNull[T](T obj, String message, String argumentExpression)
+   at Nuke.Common.Git.GitRepository.GetRemoteConnectionFromUrl(String url)
+   at Nuke.Common.Git.GitRepository.GetRemoteConnectionFromConfig(String gitDirectory, String remote)
+   at Nuke.Common.Git.GitRepository.FromLocalDirectory(String directory)
+   at Nuke.Common.Git.GitRepositoryAttribute.GetValue(MemberInfo member, Object instance)
+   at Nuke.Common.ValueInjection.ValueInjectionAttributeBase.<>c__DisplayClass0_0.<TryGetValue>b__0()
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Delegate.DynamicInvoke(Object[] args)
+   at Nuke.Common.ControlFlow.SuppressErrorsIf(Boolean condition, Delegate action, Object defaultValue, Boolean includeStackTrace, Boolean logWarning)
+08:37:07.686 | W |         | Exception has been thrown by the target of an invocation.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.ArgumentException: url != null (Parameter 'url')
+   at Nuke.Common.Assert.NotNull[T](T obj, String message, String argumentExpression)
+   at Nuke.Common.Git.GitRepository.GetRemoteConnectionFromUrl(String url)
+   at Nuke.Common.Git.GitRepository.GetRemoteConnectionFromConfig(String gitDirectory, String remote)
+   at Nuke.Common.Git.GitRepository.FromLocalDirectory(String directory)
+   at Nuke.Common.Tools.GitVersion.GitVersionAttribute.<>c.<GetValue>b__24_0()
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Delegate.DynamicInvoke(Object[] args)
+   at Nuke.Common.ControlFlow.SuppressErrorsIf(Boolean condition, Delegate action, Object defaultValue, Boolean includeStackTrace, Boolean logWarning)
+08:37:07.794 | I |         | > "C:\Program Files\dotnet\dotnet.exe" C:\Users\stipps\.nuget\packages\gitversion.tool\5.8.0\tools\net5.0\any\gitversion.dll /nocache
+08:37:08.136 | V |         | EventInvoker.OnBuildInitialized (-3.4028235E+38)
+08:37:08.147 | V | Restore | EventInvoker.OnTargetRunning (-3.4028235E+38)
+08:37:08.149 | I | Restore | > "C:\Program Files\dotnet\dotnet.exe" restore C:\Users\stipps\RiderProjects\Stipps.ShortGuid\Stipps.ShortGuid.sln
+08:37:08.586 | D | Restore |   Wiederherzustellende Projekte werden ermittelt...
+08:37:08.749 | D | Restore |   Alle Projekte sind für die Wiederherstellung auf dem neuesten Stand.
+08:37:08.765 | V | Restore | Telemetry.OnTargetSucceeded (0)
+08:37:08.850 | V | Restore | Sending TargetSucceeded telemetry event ...
+08:37:08.850 | V | Restore |   build_components         = 
+08:37:08.850 | V | Restore |   build_type               = Project
+08:37:08.850 | V | Restore |   compile_time             = <null>
+08:37:08.850 | V | Restore |   config_generators        = 
+08:37:08.850 | V | Restore |   host                     = Terminal
+08:37:08.850 | V | Restore |   num_custom_components    = 0
+08:37:08.850 | V | Restore |   num_custom_extensions    = 0
+08:37:08.850 | V | Restore |   num_partitioned_targets  = 0
+08:37:08.850 | V | Restore |   num_secrets              = 0
+08:37:08.850 | V | Restore |   num_targets              = 5
+08:37:08.850 | V | Restore |   os_architecture          = X64
+08:37:08.850 | V | Restore |   os_platform              = Windows
+08:37:08.850 | V | Restore |   target_current_partition = 1
+08:37:08.850 | V | Restore |   target_duration          = 1
+08:37:08.850 | V | Restore |   target_framework         = .NETCoreApp,Version=v6.0
+08:37:08.850 | V | Restore |   target_name              = Restore
+08:37:08.850 | V | Restore |   target_total_partitions  = 1
+08:37:08.850 | V | Restore |   version_dotnet_sdk       = 6.0.201
+08:37:08.850 | V | Restore |   version_nuke_common      = 6.0.1
+08:37:08.850 | V | Restore |   version_nuke_global_tool = <null>
+08:37:08.946 | V | Restore | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+08:37:08.950 | V | Compile | EventInvoker.OnTargetRunning (-3.4028235E+38)
+08:37:08.955 | I | Compile | > "C:\Program Files\dotnet\dotnet.exe" build C:\Users\stipps\RiderProjects\Stipps.ShortGuid\Stipps.ShortGuid.sln --configuration Debug --no-restore --output C:\Users\stipps\RiderProjects\Stipps.ShortGuid\output /property:AssemblyVersion=0.1.0.0 /property:FileVersion=0.1.0.0 /property:InformationalVersion=0.1.0+0.Branch.main.Sha.1ccdd7f4103c397a01688186e030df30bae2b2ad
+08:37:09.078 | D | Compile | Microsoft (R)-Build-Engine, Version 17.1.0+ae57d105c für .NET
+08:37:09.079 | D | Compile | Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+08:37:09.080 | D | Compile | 
+08:37:09.627 | D | Compile |   Stipps.ShortGuid -> C:\Users\stipps\RiderProjects\Stipps.ShortGuid\output\Stipps.ShortGuid.dll
+08:37:09.802 | D | Compile |   Stipps.ShortGuid.Benchmark -> C:\Users\stipps\RiderProjects\Stipps.ShortGuid\output\Stipps.ShortGuid.Benchmark.dll
+08:37:09.834 | D | Compile |   Das Paket "C:\Users\stipps\RiderProjects\Stipps.ShortGuid\output\Stipps.ShortGuid.1.0.0.nupkg" wurde erfolgreich erstellt.
+08:37:09.893 | D | Compile |   Stipps.ShortGuid.Tests -> C:\Users\stipps\RiderProjects\Stipps.ShortGuid\output\Stipps.ShortGuid.Tests.dll
+08:37:09.902 | D | Compile | 
+08:37:09.903 | D | Compile | Der Buildvorgang wurde erfolgreich ausgeführt.
+08:37:09.904 | D | Compile |     0 Warnung(en)
+08:37:09.904 | D | Compile |     0 Fehler
+08:37:09.905 | D | Compile | 
+08:37:09.906 | D | Compile | Verstrichene Zeit 00:00:00.78
+08:37:09.927 | V | Compile | Telemetry.OnTargetSucceeded (0)
+08:37:10.008 | V | Compile | Sending TargetSucceeded telemetry event ...
+08:37:10.008 | V | Compile |   build_components         = 
+08:37:10.008 | V | Compile |   build_type               = Project
+08:37:10.008 | V | Compile |   compile_time             = <null>
+08:37:10.008 | V | Compile |   config_generators        = 
+08:37:10.008 | V | Compile |   host                     = Terminal
+08:37:10.008 | V | Compile |   num_custom_components    = 0
+08:37:10.008 | V | Compile |   num_custom_extensions    = 0
+08:37:10.008 | V | Compile |   num_partitioned_targets  = 0
+08:37:10.008 | V | Compile |   num_secrets              = 0
+08:37:10.008 | V | Compile |   num_targets              = 5
+08:37:10.008 | V | Compile |   os_architecture          = X64
+08:37:10.008 | V | Compile |   os_platform              = Windows
+08:37:10.008 | V | Compile |   target_current_partition = 1
+08:37:10.008 | V | Compile |   target_duration          = 1
+08:37:10.008 | V | Compile |   target_framework         = .NETCoreApp,Version=v6.0
+08:37:10.008 | V | Compile |   target_name              = Compile
+08:37:10.008 | V | Compile |   target_total_partitions  = 1
+08:37:10.008 | V | Compile |   version_dotnet_sdk       = 6.0.201
+08:37:10.008 | V | Compile |   version_nuke_common      = 6.0.1
+08:37:10.008 | V | Compile |   version_nuke_global_tool = <null>
+08:37:10.064 | V | Compile | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+08:37:10.068 | V |    Pack | EventInvoker.OnTargetRunning (-3.4028235E+38)
+08:37:10.072 | I |    Pack | > "C:\Program Files\dotnet\dotnet.exe" pack C:\Users\stipps\RiderProjects\Stipps.ShortGuid\src\Stipps.ShortGuid\Stipps.ShortGuid.csproj --configuration Debug --no-build --no-restore --output C:\Users\stipps\RiderProjects\Stipps.ShortGuid\output\nuget --no-dependencies /property:Version=0.1.0
+08:37:10.196 | D |    Pack | Microsoft (R)-Build-Engine, Version 17.1.0+ae57d105c für .NET
+08:37:10.197 | D |    Pack | Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+08:37:10.198 | D |    Pack | 
+08:37:10.726 | D |    Pack |   Das Paket "C:\Users\stipps\RiderProjects\Stipps.ShortGuid\output\nuget\Stipps.ShortGuid.0.1.0.nupkg" wurde erfolgreich erstellt.
+08:37:10.750 | V |    Pack | Telemetry.OnTargetSucceeded (0)
+08:37:10.750 | V |    Pack | EventInvoker.OnTargetSucceeded (-3.4028235E+38)

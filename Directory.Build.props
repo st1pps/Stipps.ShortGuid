@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+        <Authors>Fredrik Stipps</Authors>
+        <RepositoryUrl>https://github.com/st1pps/Stipps.ShortGuid</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/st1pps/Stipps.ShortGuid</PackageProjectUrl>
+        <PackageLicense>https://github.com/st1pps/Stipps.ShortGuid/blob/main/LICENSE.md</PackageLicense>         
+        <Title>Stipps.ShortGuid</Title>
+        <Copyright>Copyright (c) 2007 Dave Transom, Copyright (c) 2022 Fredrik Stipps</Copyright>
+        <Description>A convenience wrapper for dealing with URL-safe base64 encoded globally unique identifier (GUID), making a shorter string value (22 vs 36 characters long). Updated to target netstadard2.1 and use Spans instead of strings when possible.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+</Project>
